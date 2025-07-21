@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#boletos-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.boleto {
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.boleto:hover {
+  background: #388e3c;
+}
+
+.ocupado {
+  background: #ccc;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.banco-info {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
